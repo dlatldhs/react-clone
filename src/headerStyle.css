@@ -1,0 +1,288 @@
+/* main page header GUCCI logo */
+.header-logo {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 8px;
+  width: 100%;
+}
+
+.header-logo > a {
+  background-image: url("C:\\Users\\sionz\\Desktop\\dlxkw\\project\\gucci-clone\\public\\imgs\\main_logo.png");
+  background-repeat: no-repeat;
+  background-size: 148px 24px;
+  width: 160px;
+  height: 26px;
+  top: 8px;
+
+  font-size: 0;
+  position: absolute;
+
+  z-index: 100;
+  /* a tag */
+  color: inherit;
+
+  outline-color: initial;
+  outline-style: none;
+  outline-width: 0px;
+
+  text-decoration-line: none;
+  text-decoration-thickness: initial;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+/* left menu-bar style */
+.left-menu-bar {
+  left: 10px;
+  top: 25px;
+  z-index: 101;
+
+  height: 18px;
+  width: 195px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.left-menu-bar > li {
+  position: relative;
+  float: left;
+  margin-left: 15px;
+  z-index: 21;
+
+  color: #e5dfd9;
+
+  font-size: 11px;
+  font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 16px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: left;
+  text-indent: 0px;
+  text-transform: none;
+  vertical-align: baseline;
+  white-space: normal;
+  word-spacing: 0px;
+}
+/* left menu-bar style */
+
+/* right-menu-bar style */
+.right-menu-bar {
+  top: 10px;
+  right: var(--menu-right-pos);
+  --menu-right-pos: 110px;
+
+  position: absolute;
+  z-index: 102;
+}
+
+.right-menu-bar > li {
+  position: relative;
+  float: right;
+  padding-right: 22px;
+  font-size: 11px;
+  color: #e5dfd9;
+}
+/* right-menu-bar style */
+
+/* serach icon menu bar style */
+.serach-menu-bar {
+  padding-left: 0;
+}
+
+.serach-menu-bar > img {
+  position: fixed;
+  right: 20px;
+  top: 15px;
+  width: 33px;
+  height: 33px;
+  cursor: pointer;
+  z-index: 102;
+  overflow: hidden;
+  margin-right: 16px;
+}
+
+/* serach icon menu bar style */
+
+/* header background-image */
+/* .header-background-image > img {
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  object-fit: cover;
+
+  background-attachment: scroll;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  color: rgb(255, 255, 255);
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 100px;
+
+  border: 0px none rgb(255, 255, 255);
+  border-top: 0px none rgb(255, 255, 255);
+  border-right: 0px none rgb(255, 255, 255);
+  border-bottom: 0px none rgb(255, 255, 255);
+  border-left: 0px none rgb(255, 255, 255);
+  margin: 0px;
+  max-height: none;
+  min-height: 0px;
+  max-width: 100%;
+  min-width: 0px;
+
+  width: calc(100vw - (100vw - 100%));
+  height: 47vw;
+  max-height: calc(100vh - 160px);
+
+  
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  float: none;
+  display: block;
+  clear: none;
+  z-index: 20;
+
+  margin-bottom: 10px;
+} */
+
+/* header absolute & relative */
+.header {
+  position: relative;
+  margin-bottom: 10px;
+}
+.left-menu-bar,
+.right-menu-bar,
+.main-menu-bar,
+.header-logo,
+.serach-menu-bar {
+  position: absolute;
+}
+
+/* main-menu-bar */
+.main-menu-bar {
+  z-index: 102;
+  left: auto;
+  right: auto;
+  padding-left: 0;
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.main-menu-bar > li {
+  position: relative;
+  display: inline-block;
+  /* float: left; */
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  top: 50px;
+}
+.main-menu-bar > li > a {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
+  font-variant: none;
+
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  text-indent: 0px;
+  text-transform: uppercase;
+  white-space: normal;
+  word-spacing: 0px;
+
+  color: #e5dfd9;
+  display: block;
+  height: 52px;
+  letter-spacing: 1px;
+  font-variant-ligatures: none;
+  padding: 0 10px;
+  text-transform: uppercase;
+  z-index: 19;
+}
+
+/* header hover */
+.header-background {
+  top:0;
+  left:0;
+  right: 0;
+  position: fixed;
+  background: linear-gradient(to bottom, #25211e 0, rgba(37, 33, 30, 0) 100%);
+  height: 120px;
+  margin: 0 0 0 0;
+  z-index: 102;
+}
+.header-background:hover {
+  background: #1c1c1c;
+}
+/* AnyThings */
+/* 불릿 없애기 */
+ul {
+  list-style: none;
+}
+body {
+  margin: 0 0 0 0;
+}
+.background-image {
+  background-attachment: scroll;
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	color: rgb(0, 0, 0);
+
+	border: 0px none rgb(0, 0, 0);
+	border-top: 0px none rgb(0, 0, 0);
+	border-right: 0px none rgb(0, 0, 0);
+	border-bottom: 0px none rgb(0, 0, 0);
+	border-left: 0px none rgb(0, 0, 0);
+	margin: 0px;
+	padding: 100px 30px 0px;
+	max-height: none;
+	min-height: 0px;
+
+  /* size */
+  max-width: 100%;
+  text-align: center;
+  /* Color & Background */
+  background-attachment: scroll;
+  background-color: rgba(0, 0, 0, 0);
+  background-position: 0% 0%;
+  color: rgb(255, 255, 255);
+
+  margin: 0px;
+  max-height: 100%;
+  min-height: 0px;
+  max-width: 100%;
+  min-width: 0px;
+
+  position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	float: none;
+	display: block;
+	clear: none;
+	z-index: 20;
+}

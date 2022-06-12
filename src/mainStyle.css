@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main > div {
+  text-align: center;
+}
+
+.main img {
+  width: 100%;
+}
+
+.Collabo-item > img {
+  max-height: 390px;
+  margin: auto;
+}
