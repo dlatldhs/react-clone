@@ -44,6 +44,17 @@ export default function Footer() {
             </ul>
           </div>
         </section>
+        <div className="footer-info">
+        <p>
+          구찌 코리아 유한책임회사
+          대표자: 실뱅 꼴라델 / 서울시 강남구 영동대로 517, 35층(삼성동, 아셈타워) / 사업자등록번호: 120-81-79834
+          통신판매업 신고번호 제 2015-서울강남-00052 호 (사업자 정보 확인)
+        </p>
+        <p>
+          개인정보보호책임자: 한소희 / 호스팅 서비스: Rackspace Hosting
+          클라이언트서비스센터 02-3452-1921 메일 문의 clientservice.kr@gucci.com
+        </p>
+      </div>
       </div>
     </footer>
   );

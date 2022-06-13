@@ -1,18 +1,18 @@
 .footer-main {
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
   background: #1b1b1b;
   height: 515px;
   color: #999;
   text-align: left;
   z-index: 102;
   display: block;
-  width: 100%;
+  position:relative;
 }
 .content-inner {
-  margin: 0 59px;
-  padding: 0 15px;
+  max-width: 100%;
   position: absolute;
+  width: 100%;
 }
 .footer-section {
   width: 170px;
@@ -24,7 +24,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   vertical-align: top;
-  width: 25%;
+  width:25%;
 }
 
 .footer-group-title {
@@ -59,8 +59,18 @@
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
+  width:100%;
+}
+.footer-info > p {
+  font-size: 12px;
+  text-align: center;
 }
 
+.footer-info {
+  position:relative;
+  margin-top: 200px;
+  bottom: 0;
+}
 div {
   display: block;
 }

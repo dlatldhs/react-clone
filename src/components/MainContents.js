@@ -13,6 +13,10 @@ export default function MainContents() {
       </div>
       <div className="long-picture">
         <img src="./imgs/main_contents_long_image.jpg" alt="long_img" />
+        <h2>아디다스 x 구찌</h2>
+        <div className="ditail-button-a">
+          <a href="./index/">자세히 보기</a>
+        </div>
       </div>
     </div>
   );
