@@ -2,9 +2,9 @@ export default function Footer() {
   return (
     <footer className="footer-main">
       <div className="content-inner">
-        <section className="footer-nav">
+        <div className="header-footer">
           <div className="footer-section">
-            <div className="footer-group-title">특별한 서비스</div>
+            <h3 className="footer-group-title">특별한 서비스</h3>
             <ul className="footer-group">
               <li>특별한 온라인 서비스</li>
               <li>무이자 할부 서비스</li>
@@ -22,7 +22,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-section">
-            <div className="footer-group-title">기업 정보</div>
+            <h3 className="footer-group-title">기업 정보</h3>
             <ul className="footer-group">
               <li>Gucci 정보</li>
               <li>Gucci Garden</li>
@@ -34,7 +34,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-section">
-            <div className="footer-group-title">구찌를 만나보세요</div>
+            <h3 className="footer-group-title">구찌를 만나보세요</h3>
             <ul className="footer-group">
               <li>Facebook</li>
               <li>Instagram</li>
@@ -43,7 +43,7 @@ export default function Footer() {
               <li>Kakao Talk Channel</li>
             </ul>
           </div>
-        </section>
+        </div>
         <div className="footer-info">
         <p>
           구찌 코리아 유한책임회사

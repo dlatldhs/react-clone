@@ -25,7 +25,8 @@
   background-color: #e7e7e7;
 }
 .Collabo-item > h2,
-.long-picture > h2 {
+.long-picture > h2,
+.item-info > h2 {
   font-size: 30px;
   letter-spacing: 4px;
   font-variant-ligatures: none;
@@ -68,4 +69,8 @@
   max-width: 100%;
   margin: auto;
   background-color: #e7e7e7;
+}
+
+.item-info {
+  margin: 30px 55px;
 }
