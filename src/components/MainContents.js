@@ -1,9 +1,11 @@
 export default function MainContents() {
   return (
     <div className="main">
+      
       <div className="index">
         <img src="https://media.gucci.com/content/HeroBigStandard_1600x760/1653404405/HeroBigStandard_Oura-ring-hp_001_Default.jpg" alt="main" />
       </div>
+
       <div className="Collabo-item">
         <img src="./imgs/main_contents_image_1.webp" alt="main_contents" />
         <div className="item-info">
@@ -13,6 +15,7 @@ export default function MainContents() {
           </div>
         </div>
       </div>
+
       <div className="long-picture">
         <img src="./imgs/main_contents_long_image.jpg" alt="long_img" />
         <div className="item-info">
@@ -22,6 +25,48 @@ export default function MainContents() {
           </div>
         </div>
       </div>
+
+      <div className="gucci-story">
+        <div className="gucci-story-contents">
+          <div className="title-box">
+            <h2 id="gucci-story-title">구찌 스토리</h2>
+          </div>
+          <div className="main-contents">
+            {/* <div className="left-storys"> */}
+              <div className="story-item">
+                <img src="./imgs/newspaper_main_contents_img_1.webp" alt="story-img-left" />
+                <h3>카스텔 델 몬테(Castel del Monte)를 가다</h3>
+                <a href="./test">패션쇼 장소 ➔</a>
+              </div>
+              <div className="story-item">
+                <img src="./imgs/newspaper_main_contents_img_3.webp" alt="story-img-left" />
+                <h3>런웨이 자세히 보기</h3>
+                <a href="./test">컬렉션 탐구 ➔</a>
+              </div>
+            {/* </div> */}
+            {/* <div className="center-story"> */}
+              <div className="story-item">
+                <img src="./imgs/newspaper_main_contents_img_4.webp" alt="story-img-center" />
+                <h3>구찌 코스모고니(Cosmogonie) 룩</h3>
+                <a href="./test">컬렉션 살펴보기 ➔</a>
+              </div>
+            {/* </div> */}
+            {/* <div className="right-storys"> */}
+              <div className="story-item">
+                <img src="./imgs/newspaper_main_contents_img_2.webp" alt="story-img-right" />
+                <h3>구찌 코스모고니(Cosmogonie) 게스트</h3>
+                <a href="./test">포토 갤러리 ➔</a>
+              </div>
+              <div className="story-item">
+                <img src="./imgs/newspaper_main_contents_img_5.webp" alt="story-img-right" />
+                <h3>구찌 코스모고니(Cosmogonie) 뷰티</h3>
+                <a href="./test">패션쇼 메이크업 ➔</a>
+              </div>
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }
