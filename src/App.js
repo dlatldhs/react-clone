@@ -1,10 +1,11 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import MainContents from "./components/MainContents";
+
 import "./headerStyle.css";
 import "./mainStyle.css";
 import "./footerStyle.css";
 import React, { useState, useEffect } from "react";
-import MainContents from "./components/MainContents";
 
 export default function App() {
   const [position, setPosition] = useState(0);
@@ -21,7 +22,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <Header backPosition={position} />
+      <Header pwd={position} />
       <MainContents />
       <Footer />
     </div>
