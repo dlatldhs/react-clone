@@ -145,3 +145,26 @@
   grid-column: 2 / span 1;
   grid-row: 1 / span 2;
 }
+
+.collabo-left-btn ,
+.collabo-right-btn {
+  color: #999;
+  background:none;
+  border:none;
+  font-size: 40px;
+  line-height: normal;
+  position:absolute;
+  margin:0 0 0 0;
+  padding: 0 0 0 0;
+}
+.collabo-left-btn {
+  left:1%;
+  top:50%;
+}
+.collabo-right-btn {
+  right: 1%;
+  top:50%;
+}
+.Collabo-main-item-box {
+  position: relative;
+}
