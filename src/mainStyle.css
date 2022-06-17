@@ -210,3 +210,10 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+.index {
+  display:none;
+}
+.home-slide-container {
+  position: relative;
+}

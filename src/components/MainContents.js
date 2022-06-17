@@ -5,12 +5,6 @@ export default function MainContents() {
   let slideIndex = 1;
   const [imgs, setImg] = React.useState(IndexImage);
   // console.log(IndexImage[0].path);
-  function plusSlides( n ) {
-    showSlides(slideIndex += n );
-  }
-  function currentSlide( n ) {
-    showSlides(slideIndex =  n );
-  }
   function showSlides( n ) {
     let i;
     let slides = document.getElementsByClassName("index");
@@ -31,6 +25,14 @@ export default function MainContents() {
     slides[slideIndex-1].stlye.display = "block";
     dots[slideIndex-1].className += " active";
   }
+  
+  function plusSlides( n ) {
+    showSlides(slideIndex += n );
+  }
+  function currentSlide( n ) {
+    showSlides(slideIndex =  n );
+  }
+
   return (
     <div className="main">
       <div className="home-slide-container">
@@ -47,13 +49,13 @@ export default function MainContents() {
           <img src={IndexImage[3].path} alt="main" />
         </div>
       </div>
-      <a className="prev" onclick="plusSlides(-1)">❮</a>
-      <a className="next" onclick="plusSlides(1)">❯</a>
+      <a className="prev" onClick="plusSlides(-1)">❮</a>
+      <a className="next" onClick="plusSlides(1)">❯</a>
 
       <div>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+        <span className="dot" onClick="currentSlide(1)"></span>
+        <span className="dot" onClick="currentSlide(2)"></span>
+        <span className="dot" onClick="currentSlide(3)"></span>
       </div>
       
       <div className="Collabo-item">
