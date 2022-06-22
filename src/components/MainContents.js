@@ -1,41 +1,59 @@
 import IndexImage from "./IndexImage";
 import React, { useState, useEffect } from "react";
+import SimpleImageSlider from "react-simple-image-slider";
+
+
+const images = [
+  { url: IndexImage[0].path },
+  { url: IndexImage[1].path },
+  { url: IndexImage[2].path },
+  { url: IndexImage[3].path },
+];
 
 export default function MainContents() {
-  let slideIndex = 1;
-  const [imgs, setImg] = React.useState(IndexImage);
-  // console.log(IndexImage[0].path);
-  function showSlides( n ) {
-    let i;
-    let slides = document.getElementsByClassName("index");
-    let dots = document.getElementsByClassName("dot");
-    if ( n > slides.length ) {
-      slideIndex = 1;
+//   let slideIndex = 1;
+//   const [imgs, setImg] = React.useState(IndexImage);
+//   // console.log(IndexImage[0].path);
+//   function showSlides( n ) {
+//     console.log(n);
+//     let i;
+//     let slides = document.getElementsByClassName("index");
+//     let dots = document.getElementsByClassName("dot");
+//     if ( n > slides.length ) {
+//       slideIndex = 1;
 
-    }
-    if ( n < 1 ) {
-      slideIndex = slides.length;
-    }
-    for ( i = 0 ; i < slides.length ; i++ ) {
-      slides[i].style.display = "none";
-    }
-    for ( i = 0 ; i < dots.length   ; i++ ) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].stlye.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
+//     }
+//     if ( n < 1 ) {
+//       slideIndex = slides.length;
+//     }
+//     for ( i = 0 ; i < slides.length ; i++ ) {
+//       slides[i].style.display = "none";
+//     }
+//     for ( i = 0 ; i < dots.length   ; i++ ) {
+//       dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex-1].stlye.display = "block";
+//     dots[slideIndex-1].className += " active";
+//   }
   
-  function plusSlides( n ) {
-    showSlides(slideIndex += n );
-  }
-  function currentSlide( n ) {
-    showSlides(slideIndex =  n );
-  }
-
+//   const plusSlides = ( n , e ) => {
+//     console.log(n);
+//     showSlides( slideIndex += n );
+//   }
+//   const currentSlide = ( n , e ) => {
+//     console.log(n);
+//     showSlides( slideIndex += n );
+//   }
   return (
     <div className="main">
-      <div className="home-slide-container">
+      <SimpleImageSlider
+        width={1500}
+        height={700}
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
+      {/* <div className="home-slide-container">
         <div className="index fade">
           <img src={IndexImage[0].path} alt="main" />
         </div>
@@ -49,15 +67,15 @@ export default function MainContents() {
           <img src={IndexImage[3].path} alt="main" />
         </div>
       </div>
-      <a className="prev" onClick="plusSlides(-1)">❮</a>
-      <a className="next" onClick="plusSlides(1)">❯</a>
+      <a className="prev" onClick={(e)=>{plusSlides(-1)}}>❮</a>
+      <a className="next" onClick={(e)=>{plusSlides(1)}}>❯</a>
 
       <div>
-        <span className="dot" onClick="currentSlide(1)"></span>
-        <span className="dot" onClick="currentSlide(2)"></span>
-        <span className="dot" onClick="currentSlide(3)"></span>
+        <span className="dot" onClick={(e)=>{currentSlide(1)}}></span>
+        <span className="dot" onClick={(e)=>{currentSlide(2)}}></span>
+        <span className="dot" onClick={(e)=>{currentSlide(3)}}></span>
       </div>
-      
+       */}
       <div className="Collabo-item">
         <div className="Collabo-main-item-box">
           <img src="./imgs/main_contents_image_1.webp" alt="main_contents" />
