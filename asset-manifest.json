@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dlatldhs/react-clone.git/static/css/main.9828a444.css",
+    "main.js": "/dlatldhs/react-clone.git/static/js/main.cf97d237.js",
+    "index.html": "/dlatldhs/react-clone.git/index.html",
+    "main.9828a444.css.map": "/dlatldhs/react-clone.git/static/css/main.9828a444.css.map",
+    "main.cf97d237.js.map": "/dlatldhs/react-clone.git/static/js/main.cf97d237.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9828a444.css",
+    "static/js/main.cf97d237.js"
+  ]
+}
