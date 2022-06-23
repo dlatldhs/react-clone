@@ -11,83 +11,39 @@ const images = [
 ];
 
 export default function MainContents() {
-//   let slideIndex = 1;
-//   const [imgs, setImg] = React.useState(IndexImage);
-//   // console.log(IndexImage[0].path);
-//   function showSlides( n ) {
-//     console.log(n);
-//     let i;
-//     let slides = document.getElementsByClassName("index");
-//     let dots = document.getElementsByClassName("dot");
-//     if ( n > slides.length ) {
-//       slideIndex = 1;
-
-//     }
-//     if ( n < 1 ) {
-//       slideIndex = slides.length;
-//     }
-//     for ( i = 0 ; i < slides.length ; i++ ) {
-//       slides[i].style.display = "none";
-//     }
-//     for ( i = 0 ; i < dots.length   ; i++ ) {
-//       dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].stlye.display = "block";
-//     dots[slideIndex-1].className += " active";
-//   }
-  
-//   const plusSlides = ( n , e ) => {
-//     console.log(n);
-//     showSlides( slideIndex += n );
-//   }
-//   const currentSlide = ( n , e ) => {
-//     console.log(n);
-//     showSlides( slideIndex += n );
-//   }
   return (
     <div className="main">
       <SimpleImageSlider
-        width={1500}
+        width={1600}
         height={700}
         images={images}
         showBullets={true}
         showNavs={true}
+        autoPlay={true}
       />
-      {/* <div className="home-slide-container">
-        <div className="index fade">
-          <img src={IndexImage[0].path} alt="main" />
-        </div>
-        <div className="index fade">
-          <img src={IndexImage[1].path} alt="main" />
-        </div>
-        <div className="index fade">
-          <img src={IndexImage[2].path} alt="main" />
-        </div>
-        <div className="index fade">
-          <img src={IndexImage[3].path} alt="main" />
-        </div>
-      </div>
-      <a className="prev" onClick={(e)=>{plusSlides(-1)}}>❮</a>
-      <a className="next" onClick={(e)=>{plusSlides(1)}}>❯</a>
 
-      <div>
-        <span className="dot" onClick={(e)=>{currentSlide(1)}}></span>
-        <span className="dot" onClick={(e)=>{currentSlide(2)}}></span>
-        <span className="dot" onClick={(e)=>{currentSlide(3)}}></span>
-      </div>
-       */}
       <div className="Collabo-item">
+
         <div className="Collabo-main-item-box">
+
           <img src="./imgs/main_contents_image_1.webp" alt="main_contents" />
           <button type="button" className="collabo-left-btn">❮</button>
           <button type="button" className="collabo-right-btn">❯</button>
+
         </div>
+
         <div className="item-info">
+
           <h2>[구찌 홀스빗 1955] 아디다스 x 구찌 미니백</h2>
+
           <div className="ditail-button-a">
+
             <a href="./index/">자세히 보기</a>
+
           </div>
+
         </div>
+        
       </div>
 
       <div className="long-picture">
