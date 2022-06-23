@@ -1,29 +1,38 @@
 import IndexImage from "./IndexImage";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect ,Component } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+import ReactDOM from "react-dom";
+import Slider from "react-slick";
 
-
-const images = [
+const mainPageImages = [
   { url: IndexImage[0].path },
   { url: IndexImage[1].path },
   { url: IndexImage[2].path },
-  { url: IndexImage[3].path },
+  { url: IndexImage[3].path }
 ];
 
+const mainContentsImages = [
+  { url: IndexImage[4].path },
+  { url: IndexImage[5].path },
+  { url: IndexImage[6].path },
+  { url: IndexImage[7].path }
+]
+
 export default function MainContents() {
+  
   return (
     <div className="main">
       <SimpleImageSlider
-        width={1600}
+        width={1519}
         height={700}
-        images={images}
+        images={mainPageImages}
         showBullets={true}
         showNavs={true}
         autoPlay={true}
       />
 
-      <div className="Collabo-item">
-
+      <div className="Collabo-item non-scroll">
+        <div className="k-m-z">
         <div className="Collabo-main-item-box">
 
           <img src="./imgs/main_contents_image_1.webp" alt="main_contents" />
@@ -43,7 +52,7 @@ export default function MainContents() {
           </div>
 
         </div>
-        
+        </div>
       </div>
 
       <div className="long-picture">

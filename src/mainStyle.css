@@ -217,3 +217,19 @@
 /* .home-slide-container {
   position: relative;
 } */
+
+.Collabo-item {
+  transition: transform 0.5s;
+}
+
+.k-m-z {
+  width: 100vw;
+  display:flex;
+}
+.k-m-z img {
+  width: 100%;
+}
+
+.non-scroll {
+  overflow:hidden;
+}
