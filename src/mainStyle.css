@@ -26,7 +26,8 @@
 }
 .Collabo-item > h2,
 .long-picture > h2,
-.item-info > h2  {
+.item-info > h2,
+.item-info > h3  {
   font-size: 30px;
   letter-spacing: 4px;
   font-variant-ligatures: none;
@@ -218,18 +219,14 @@
   position: relative;
 } */
 
-.Collabo-item {
-  transition: transform 0.5s;
+.item-info > h3 {
+  font-size: 16px;
+    line-height: 42px;
 }
 
-.k-m-z {
-  width: 100vw;
-  display:flex;
-}
-.k-m-z img {
-  width: 100%;
-}
-
-.non-scroll {
-  overflow:hidden;
+.main-contents-swiper {
+  display: flex;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(49%);
 }

@@ -11,7 +11,7 @@ const mainPageImages = [
   { url: IndexImage[3].path }
 ];
 
-const mainContentsImages = [
+const mainContentsImages = [ // main page swiper data
   { url: IndexImage[4].path },
   { url: IndexImage[5].path },
   { url: IndexImage[6].path },
@@ -32,26 +32,22 @@ export default function MainContents() {
       />
 
       <div className="Collabo-item non-scroll">
-        <div className="k-m-z">
         <div className="Collabo-main-item-box">
-
-          <img src="./imgs/main_contents_image_1.webp" alt="main_contents" />
+          <div className="main-contents-swiper">
+            <img src={IndexImage[4].path} alt="main_contents" />
+            <img src={IndexImage[5].path} alt="main_contents" />
+            <img src={IndexImage[6].path} alt="main_contents" />
+            <img src={IndexImage[7].path} alt="main_contents" />
+          </div>
           <button type="button" className="collabo-left-btn">❮</button>
           <button type="button" className="collabo-right-btn">❯</button>
-
-        </div>
-
-        <div className="item-info">
-
-          <h2>[구찌 홀스빗 1955] 아디다스 x 구찌 미니백</h2>
-
-          <div className="ditail-button-a">
-
-            <a href="./index/">자세히 보기</a>
-
+          <div className="item-info">
+            <h3>{IndexImage[4].subTitle}</h3>
+            <h2>{IndexImage[4].mainTitle}</h2>
+            <div className="ditail-button-a">
+              <a href="./index/">자세히 보기</a>
+            </div>
           </div>
-
-        </div>
         </div>
       </div>
 
