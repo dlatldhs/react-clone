@@ -11,12 +11,12 @@ const mainPageImages = [
   { url: IndexImage[3].path }
 ];
 
-const mainContentsImages = [ // main page swiper data
-  { url: IndexImage[4].path },
-  { url: IndexImage[5].path },
-  { url: IndexImage[6].path },
-  { url: IndexImage[7].path }
-]
+// const mainContentsImages = [ // main page swiper data
+//   { url: IndexImage[4].path },
+//   { url: IndexImage[5].path },
+//   { url: IndexImage[6].path },
+//   { url: IndexImage[7].path }
+// ]
 
 export default function MainContents() {
   
@@ -51,6 +51,7 @@ export default function MainContents() {
         </div>
       </div>
 
+      
       <div className="long-picture">
         <img src="./imgs/main_contents_long_image.jpg" alt="long_img" />
         <div className="item-info">

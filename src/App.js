@@ -1,10 +1,13 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainContents from "./components/MainContents";
+import SliderData from "./components/SliderData";
+import ImageSlider from "./components/ImageSlider";
 
 import "./headerStyle.css";
 import "./mainStyle.css";
 import "./footerStyle.css";
+import "./slider.css"
 import React, { useState, useEffect } from "react";
 
 export default function App() {
@@ -24,6 +27,7 @@ export default function App() {
     <div className="App">
       <Header pwd={position} />
       <MainContents />
+      <ImageSlider slides={SliderData}/>
       <Footer />
     </div>
   );

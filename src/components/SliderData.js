@@ -1,4 +1,4 @@
-export const SwiperData = [
+export const SliderData = [
     {
       path:
         "https://media.gucci.com/style/Transparent_Center_0_0_730x490/1636974047/686864_10ODT_8454_001_057_0000_Light.png",
@@ -24,4 +24,4 @@ export const SwiperData = [
       mainTitle: "[구찌 뱀부 1947] 미니 탑 핸들백"
     }
   ];
-  
+export default SliderData

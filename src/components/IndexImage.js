@@ -1,4 +1,4 @@
-export default [
+export const IndexImage = [
     {
         path : "https://media.gucci.com/content/HeroBigStandard_1600x760/1653404405/HeroBigStandard_Oura-ring-hp_001_Default.jpg",
         subTitle : "",
@@ -20,3 +20,5 @@ export default [
         mainTitle : "아디다스 X 구찌"
     },
 ]
+
+export default IndexImage
