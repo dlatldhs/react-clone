@@ -6,7 +6,6 @@ import "./headerStyle.css";
 import "./mainStyle.css";
 import "./footerStyle.css";
 import React, { useState, useEffect } from "react";
-import SwiperImage from "./components/SwiperImage";
 
 export default function App() {
   const [position, setPosition] = useState(0);
@@ -23,10 +22,9 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <Header pwd={position} />
+      <Header pwd={position} />
       <MainContents />
-      <Footer /> */}
-      <SwiperImage />
+      <Footer />
     </div>
   );
 }
