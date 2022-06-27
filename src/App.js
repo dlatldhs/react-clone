@@ -7,8 +7,9 @@ import ImageSlider from "./components/ImageSlider";
 import "./headerStyle.css";
 import "./mainStyle.css";
 import "./footerStyle.css";
-import "./slider.css"
+import "./slider.css";
 import React, { useState, useEffect } from "react";
+import Slider from "react-slick";
 
 export default function App() {
   const [position, setPosition] = useState(0);
@@ -27,8 +28,8 @@ export default function App() {
     <div className="App">
       <Header pwd={position} />
       <MainContents />
-      <ImageSlider slides={SliderData}/>
       <Footer />
+      {/* <ImageSlider slides={SliderData}/> */}
     </div>
   );
 }

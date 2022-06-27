@@ -1,8 +1,9 @@
 import IndexImage from "./IndexImage";
 import React, { useState, useEffect ,Component } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
-import ReactDOM from "react-dom";
-import Slider from "react-slick";
+
+import SliderData from "./SliderData";
+import ImageSlider from "./ImageSlider";
 
 const mainPageImages = [
   { url: IndexImage[0].path },
@@ -10,13 +11,6 @@ const mainPageImages = [
   { url: IndexImage[2].path },
   { url: IndexImage[3].path }
 ];
-
-// const mainContentsImages = [ // main page swiper data
-//   { url: IndexImage[4].path },
-//   { url: IndexImage[5].path },
-//   { url: IndexImage[6].path },
-//   { url: IndexImage[7].path }
-// ]
 
 export default function MainContents() {
   
@@ -32,9 +26,10 @@ export default function MainContents() {
       />
 
       <div className="Collabo-item non-scroll">
+      <ImageSlider slides={SliderData}/>
         <div className="Collabo-main-item-box">
           <div className="main-contents-swiper">
-            <img src={IndexImage[4].path} alt="main_contents" />
+            {/* <img src={IndexImage[4].path} alt="main_contents" />
             <img src={IndexImage[5].path} alt="main_contents" />
             <img src={IndexImage[6].path} alt="main_contents" />
             <img src={IndexImage[7].path} alt="main_contents" />
@@ -43,10 +38,10 @@ export default function MainContents() {
           <button type="button" className="collabo-right-btn">❯</button>
           <div className="item-info">
             <h3>{IndexImage[4].subTitle}</h3>
-            <h2>{IndexImage[4].mainTitle}</h2>
-            <div className="ditail-button-a">
+            <h2>{IndexImage[4].mainTitle}</h2> */}
+            {/* <div className="ditail-button-a">
               <a href="./index/">자세히 보기</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
