@@ -45,6 +45,26 @@
   transform: scale(1.08);
 }
 
-.contents-main-title , .contents-sub-title {
-  margin: 0 0 0 0;
+.contents-main-title {
+  font-size: 30px;
+  margin-top:40px;
+  margin: 40px auto 0 auto;
+}
+.contents-sub-title {
+  font-size: 16px;
+  margin: auto 0;
+}
+.contents-main-title,
+.contents-sub-title {
+  vertical-align: middle;
+  position: absolute;
+  letter-spacing: 4px;
+  font-variant-ligatures: none;
+  line-height: 35px;
+  text-transform: initial;
+  color: #313131;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 20px;
+  width:100%;
 }

@@ -31,8 +31,10 @@ const ImageSlider = ({ slides }) => {
               {index === current && (
                 <img src={slide.path} alt="item-img" className="image" />
               )}
-              {/* <h5 className="contents-sub-title">{SliderData[index].subTitle}</h5>
-              <h4 className="contents-main-title">{SliderData[index].mainTitle}</h4> */}
+              <div className="main-items-info">
+                <h5 className="contents-sub-title">{SliderData[index].subTitle}</h5>
+                <h4 className="contents-main-title">{SliderData[index].mainTitle}</h4>
+              </div>
             </div>
         );
       })}
