@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { SliderData } from "./SliderData";
+import { SliderData2 } from "./SliderData2";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
-import Slider from "react-slick";
+
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -22,7 +22,7 @@ const ImageSlider = ({ slides }) => {
     <section className="slider">
       <FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide} />
       <FaArrowAltCircleRight className="right-arrow" onClick={nextSlide} />
-      {SliderData.map((slide, index) => {
+      {SliderData2.map((slide, index) => {
         return (
             <div
               className={index === current ? "slide active" : "slide"}
@@ -32,8 +32,8 @@ const ImageSlider = ({ slides }) => {
                 <img src={slide.path} alt="item-img" className="image" />
               )}
               <div className="main-items-info">
-                <h5 className="contents-sub-title">{SliderData[index].subTitle}</h5>
-                <h4 className="contents-main-title">{SliderData[index].mainTitle}</h4>
+                <h5 className="contents-sub-title">{SliderData2[index].subTitle}</h5>
+                <h4 className="contents-main-title">{SliderData2[index].mainTitle}</h4>
               </div>
             </div>
         );

@@ -1,18 +1,15 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import MainContents from "./components/MainContents";
-import SliderData from "./components/SliderData";
-import ImageSlider from "./components/ImageSlider";
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import NotFound from "./components/NotFound";
 
-import "./headerStyle.css";
-import "./mainStyle.css";
-import "./footerStyle.css";
-import "./slider.css";
+import "./style/headerStyle.css";
+import "./style/mainStyle.css";
+import "./style/footerStyle.css";
+import "./style/slider.css";
 import React, { useState, useEffect } from "react";
-import Slider from "react-slick";
 import GucciItems from "./components/GucciItems";
+import MainPage from "./components/MainPage";
 
 export default function App() {
   const [position, setPosition] = useState(0);
@@ -30,14 +27,14 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Header pwd={position} />
+      <Header pwd={position} />
         <Routes>
           {/* <MainContents />
           <GucciItems />
           <Footer /> */}
-          <Route path="/a" element={<MainContents />}></Route>
-          <Route path="/a" element={<Footer />}></Route>
-          <Route path="/b" element={<GucciItems />}></Route>
+          <Route path="/home" element={<MainPage />}></Route>
+          <Route path="/home" element={<Footer />}></Route>
+          <Route path="/Gucciitems" element={<GucciItems />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </BrowserRouter>

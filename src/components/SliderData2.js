@@ -1,4 +1,4 @@
-export const SliderData = [
+export const SliderData2 = [
     {
       path:
         "//media.gucci.com/content/DarkGray_ProductPush_Standard_700x700/1655826327/ProductPush_443497UWBKT8925_001_Light.jpg",
@@ -24,4 +24,4 @@ export const SliderData = [
       mainTitle: "[구찌 다이애나] 미니 GG 토트백"
     }
   ];
-export default SliderData
+export default SliderData2

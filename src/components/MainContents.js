@@ -2,53 +2,37 @@ import IndexImage from "./IndexImage";
 import React, { useState, useEffect ,Component } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
 
-import SliderData from "./SliderData";
+import SliderData1 from "./SliderData1";
+import SliderData2 from "./SliderData2";
 import ImageSlider from "./ImageSlider";
 
-const mainPageImages = [
-  { url: IndexImage[0].path },
-  { url: IndexImage[1].path },
-  { url: IndexImage[2].path },
-  { url: IndexImage[3].path }
-];
-
 export default function MainContents() {
+
+  const SliderDataaa = [
+    { url: IndexImage[0].path },
+    { url: IndexImage[1].path },
+    { url: IndexImage[2].path },
+    { url: IndexImage[3].path }
+  ]
   
   return (
     <div className="main">
       <SimpleImageSlider
         width={1519}
         height={700}
-        images={mainPageImages}
+        images={SliderDataaa}
         showBullets={true}
         showNavs={true}
         autoPlay={true}
       />
 
       <div className="Collabo-item non-scroll">
-      <ImageSlider slides={SliderData}/>
-        <div className="Collabo-main-item-box">
-          <div className="main-contents-swiper">
-            {/* <img src={IndexImage[4].path} alt="main_contents" />
-            <img src={IndexImage[5].path} alt="main_contents" />
-            <img src={IndexImage[6].path} alt="main_contents" />
-            <img src={IndexImage[7].path} alt="main_contents" />
-          </div>
-          <button type="button" className="collabo-left-btn">❮</button>
-          <button type="button" className="collabo-right-btn">❯</button>
-          <div className="item-info">
-            <h3>{IndexImage[4].subTitle}</h3>
-            <h2>{IndexImage[4].mainTitle}</h2> */}
-            {/* <div className="ditail-button-a">
-              <a href="./index/">자세히 보기</a>
-            </div> */}
-          </div>
-        </div>
-      </div>
+        <ImageSlider slides={SliderData2}/> 
+       </div>
 
       
       <div className="long-picture">
-        <img src="./imgs/main_contents_long_image.jpg" alt="long_img" />
+        <img src="https://github.com/dlatldhs/react-clone/blob/main/public/imgs/main_contents_long_image.jpg?raw=true" alt="long_img" />
         <div className="item-info">
           <h2>아디다스 x 구찌</h2>
           <div className="ditail-button-a">
@@ -65,31 +49,31 @@ export default function MainContents() {
           <div className="main-contents">
             {/* <div className="left-storys"> */}
               <div className="story-item">
-                <img src="./imgs/newspaper_main_contents_img_1.webp" alt="story-img-left" />
+                <img src="https://raw.githubusercontent.com/dlatldhs/react-clone/main/public/imgs/newspaper_main_contents_img_1.webp" alt="story-img-left" />
                 <h3>카스텔 델 몬테(Castel del Monte)를 가다</h3>
                 <a href="./test">패션쇼 장소 ➔</a>
               </div>
               <div className="story-item">
-                <img src="./imgs/newspaper_main_contents_img_3.webp" alt="story-img-left" />
+                <img src="https://raw.githubusercontent.com/dlatldhs/react-clone/main/public/imgs/newspaper_main_contents_img_3.webp" alt="story-img-left" />
                 <h3>런웨이 자세히 보기</h3>
                 <a href="./test">컬렉션 탐구 ➔</a>
               </div>
             {/* </div> */}
             {/* <div className="center-story"> */}
               <div className="story-item">
-                <img src="./imgs/newspaper_main_contents_img_4.webp" alt="story-img-center" />
+                <img src="https://raw.githubusercontent.com/dlatldhs/react-clone/main/public/imgs/newspaper_main_contents_img_4.webp" alt="story-img-center" />
                 <h3>구찌 코스모고니(Cosmogonie) 룩</h3>
                 <a href="./test">컬렉션 살펴보기 ➔</a>
               </div>
             {/* </div> */}
             {/* <div className="right-storys"> */}
               <div className="story-item">
-                <img src="./imgs/newspaper_main_contents_img_2.webp" alt="story-img-right" />
+                <img src="https://raw.githubusercontent.com/dlatldhs/react-clone/main/public/imgs/newspaper_main_contents_img_2.webp" alt="story-img-right" />
                 <h3>구찌 코스모고니(Cosmogonie) 게스트</h3>
                 <a href="./test">포토 갤러리 ➔</a>
               </div>
               <div className="story-item">
-                <img src="./imgs/newspaper_main_contents_img_5.webp" alt="story-img-right" />
+                <img src="https://raw.githubusercontent.com/dlatldhs/react-clone/main/public/imgs/newspaper_main_contents_img_5.webp" alt="story-img-right" />
                 <h3>구찌 코스모고니(Cosmogonie) 뷰티</h3>
                 <a href="./test">패션쇼 메이크업 ➔</a>
               </div>

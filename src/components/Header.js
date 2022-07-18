@@ -1,6 +1,6 @@
 // GUCCI Header ( menuBar & login & logo & heratItem & heartItemList )
 export default function Header(props) {
-  // console.log("props.backPosition : " + props.backPosition);
+  console.log("props.backPosition : " + props.backPosition);
   return (
     <header style={{ backgroundPositionY: props.pwd / 2 }}>
       <div className="header-background">
@@ -17,7 +17,7 @@ export default function Header(props) {
         </ul>
 
         <div className="serach-menu-bar">
-          <img src={'imgs\\search_icon_white.png'} alt="header serach logo"/>
+          <img src={'https://github.com/dlatldhs/react-clone/blob/main/public/imgs/search_icon_white.png?raw=true'} alt="header serach logo"/>
         </div>
 
         <div className="header-logo">
@@ -36,7 +36,7 @@ export default function Header(props) {
             <a href="test1">여성</a>
           </li>
           <li>
-            <a href="test1">남성</a>
+            <a href="Gucciitems">남성</a>
           </li>
           <li>
             <a href="test1">주얼리 & 시계</a>
