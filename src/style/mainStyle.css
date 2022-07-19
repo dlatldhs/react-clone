@@ -15,7 +15,7 @@
 .Collabo-item {
   background-color: #e7e7e7;
   margin: 15px 15px 0px 15px;
-  padding: 100px 0 150px;
+  padding: 0 0 150px;
   text-align: center;
 }
 
@@ -180,4 +180,8 @@
   overflow: hidden;
   transition: all 0.4s ease-in-out;
   transform: translateX(49%);
+}
+
+.main-page-info {
+  position: absolute;
 }
