@@ -3,7 +3,8 @@ import Footer from "./components/Footer";
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import NotFound from "./components/NotFound";
 
-import "./style/headerStyle.css";
+import "./style/App.css";
+import "./style/header.css";
 import "./style/mainStyle.css";
 import "./style/footerStyle.css";
 import "./style/slider.css";

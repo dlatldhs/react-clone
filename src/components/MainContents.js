@@ -1,6 +1,7 @@
 import IndexImage from "./IndexImage";
 import React, { useState, useEffect ,Component } from "react";
 import SimpleImageSlider from "react-simple-image-slider";
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 import SliderData1 from "./SliderData1";
 import SliderData2 from "./SliderData2";
@@ -13,18 +14,47 @@ export default function MainContents() {
     { url: IndexImage[1].path },
     { url: IndexImage[2].path },
     { url: IndexImage[3].path }
-  ]
+  ];
+
+  const slides = SliderData1
+
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   
   return (
     <div className="main">
-      <SimpleImageSlider
-        width={1519}
-        height={700}
-        images={SliderDataaa}
-        showBullets={true}
-        showNavs={true}
-        autoPlay={true}
-      />
+      <div className="main-slider">
+        <p className="main-left-arrow" onClick={prevSlide}>〈</p>
+        <p className="main-right-arrow" onClick={nextSlide}>〉</p>
+        {SliderData1.map((slide,index) => {
+          return (
+            <div
+              className={index === current ? "main-slide active" : "main-slide"}
+              key={index}
+            >
+              {index === current && (
+                <img src={slide.path} alt="mainpage-img" className="image" />
+              )}
+              <div className="main-page-info">
+                <h4 className="main-page-title">{SliderData1[index].mainTitle}</h4>
+              </div>
+            </div>
+          )
+        })}
+      </div>
 
       <div className="Collabo-item non-scroll">
         <ImageSlider slides={SliderData2}/> 
