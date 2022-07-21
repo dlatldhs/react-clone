@@ -23,18 +23,31 @@ const Header = (props) => {
             <div className="popup">
               <div className="popup_inner">
                 <div className="service-title">
-                  <h1>고객 서비스</h1>
-                  <span>GUCCI 대한민국</span>
+                  <h1>
+                    고객 서비스
+                    <span>GUCCI 대한민국</span>
+                  </h1>
                 </div>
                 <div className="service-items">
+                  <h2>Gucci.com 및 온라인 구매 관련 문의</h2>
                   <div className="phone">
-                    phone
+                    <h3>PHONE</h3>
+                    <p>클라이언트서비스센터 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
                   </div>
                   <div className="email">
-                    email
+                    <div>
+                      <h3>EMAIL</h3>
+                      <p>
+                        '이메일 보내기' 버튼을 클릭하여 클라이언트서비스센터로 문의해 주시기 바랍니다.자세한 문의 내용과 연락처를 남겨주시면 빠른 시일 내에 연락 드리겠습니다.
+                      </p>
+                    </div>
+                    <div>
+                      <a href="#">이메일 보내기</a>
+                    </div>
                   </div>
                   <div className="live-chat">
-                    live-chat
+                    <h3>라이브챗</h3>
+                    <p>클라이언트서비스센터 라이브챗 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
                   </div>
                 </div>
                 <div>
