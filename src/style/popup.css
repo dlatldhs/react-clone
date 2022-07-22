@@ -39,7 +39,9 @@
 
 .service-items > .email {
     height: 118px;
+    display: flex;
 }
+
 
 .service-items > .live-chat {
     height: 81px;
@@ -51,6 +53,26 @@
     border-bottom: 1px solid #e7e7e7e7;
 }
 
+.phone {
+    display:flex;
+}
+.phone > div:nth-child(2) {
+    width: 210px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+}
+
+.phone > div:nth-child(2) > div {
+    width: 200px;
+    height: 36px;
+    font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 18px;
+}
 
 
 .service-title > h1 {
@@ -103,8 +125,8 @@
 .phone , .email {
     margin-bottom: 24px;
 }
-.phone > h3 , .email > div:nth-child(1) > h3 ,
-.live-chat > h3 {
+.phone > div:nth-child(1) > h3 , .email > div:nth-child(1) > h3 ,
+.live-chat > div:nth-child(1) > h3 {
 	font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
 	font-size: 12px;
 	font-style: normal;
@@ -124,7 +146,7 @@
     margin: 0 0 4px 0;
 }
 
-.phone > p {
+.phone > div:nth-child(1) > p {
     font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -176,4 +198,42 @@
 
 .email > div:nth-child(2) > a:hover {
     border: 2px solid rgb(153, 153, 153);
+}
+
+.live-chat > div:nth-child(1) > p {
+    height: 20px;
+    width: 420px;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+    font-family: Futura, Futura, "Malgun Gothic", Dotum, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5;
+    text-align: left;
+}
+
+.live-chat {
+    display:flex;
+    align-items: center;
+}
+
+.live-chat > div:nth-child(2) > button {
+    background: #e5dfd9;
+    color: #999;
+    font-family: Futura,Futura,"Malgun Gothic",Dotum,sans-serif;
+    box-sizing: border-box;
+    font-weight: 400;
+    display: inline-block;
+    height: 40px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    min-width: 234px;
+    padding: 0 10px;
+    text-align: center;
+    border: none;
+}
+
+.close-btn {
+    position: fixed;
+    right: 22px;
+    top: 22px;
 }

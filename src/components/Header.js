@@ -1,5 +1,5 @@
 import React , { useState } from 'react';
-
+import XSVG from '../svg/XSvg';
 
 const Header = (props) => {
   const headerP = props.pwd;
@@ -30,30 +30,57 @@ const Header = (props) => {
                 </div>
                 <div className="service-items">
                   <h2>Gucci.com 및 온라인 구매 관련 문의</h2>
+
                   <div className="phone">
-                    <h3>PHONE</h3>
-                    <p>클라이언트서비스센터 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
+
+                    <div>
+
+                      <h3>PHONE</h3>
+                      <p>클라이언트서비스센터 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
+                    
+                    </div>
+
+                    <div>
+                      
+                      <div>
+                        클라이언트서비스<br />센터 02.3452.1921
+                      </div>
+
+                    </div>
+
                   </div>
+
                   <div className="email">
+
                     <div>
                       <h3>EMAIL</h3>
                       <p>
-                        '이메일 보내기' 버튼을 클릭하여 클라이언트서비스센터로 문의해 주시기 바랍니다.자세한 문의 내용과 연락처를 남겨주시면 빠른 시일 내에 연락 드리겠습니다.
+                        '이메일 보내기' 버튼을 클릭하여 클라이언트서비스센터로 문의해 주시기 바랍니다.<br />자세한 문의 내용과 연락처를 남겨주시면 빠른 시일 내에 연락 드리겠습니다.
                       </p>
                     </div>
+
                     <div>
                       <a href="#">이메일 보내기</a>
                     </div>
+
                   </div>
                   <div className="live-chat">
-                    <h3>라이브챗</h3>
-                    <p>클라이언트서비스센터 라이브챗 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
+
+                    <div>
+                      <h3>라이브챗</h3>
+                      <p>클라이언트서비스센터 라이브챗 운영 시간 월~일 / 오전 10시 ~ 오후 8시</p>
+                    </div>
+
+                    <div>
+                      <button className="chat-btn">라이브챗 불가능</button>
+                    </div>
+                    
                   </div>
                 </div>
                 <div>
-                  <button className="close_btn"  onClick={togglePopup}>
-                    Close me!
-                  </button>
+                  <span className="close-btn"  onClick={togglePopup}>
+                    <XSVG />
+                  </span>
                 </div>
               </div>
             </div>
