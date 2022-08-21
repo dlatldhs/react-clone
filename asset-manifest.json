@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "http://dlatldhs.github.io/react-clone/static/css/main.a817f63e.css",
-    "main.js": "http://dlatldhs.github.io/react-clone/static/js/main.6c6b9b4f.js",
-    "index.html": "http://dlatldhs.github.io/react-clone/index.html",
-    "main.a817f63e.css.map": "http://dlatldhs.github.io/react-clone/static/css/main.a817f63e.css.map",
-    "main.6c6b9b4f.js.map": "http://dlatldhs.github.io/react-clone/static/js/main.6c6b9b4f.js.map"
+    "main.css": "https://dlatldhs.github.io/react-clone/static/css/main.a817f63e.css",
+    "main.js": "https://dlatldhs.github.io/react-clone/static/js/main.07440f18.js",
+    "index.html": "https://dlatldhs.github.io/react-clone/index.html",
+    "main.a817f63e.css.map": "https://dlatldhs.github.io/react-clone/static/css/main.a817f63e.css.map",
+    "main.07440f18.js.map": "https://dlatldhs.github.io/react-clone/static/js/main.07440f18.js.map"
   },
   "entrypoints": [
     "static/css/main.a817f63e.css",
-    "static/js/main.6c6b9b4f.js"
+    "static/js/main.07440f18.js"
   ]
 }
