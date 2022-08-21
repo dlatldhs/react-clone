@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-clone/static/css/main.a817f63e.css",
-    "main.js": "/react-clone/static/js/main.7cc94f2a.js",
+    "main.js": "/react-clone/static/js/main.8383883e.js",
     "index.html": "/react-clone/index.html",
     "main.a817f63e.css.map": "/react-clone/static/css/main.a817f63e.css.map",
-    "main.7cc94f2a.js.map": "/react-clone/static/js/main.7cc94f2a.js.map"
+    "main.8383883e.js.map": "/react-clone/static/js/main.8383883e.js.map"
   },
   "entrypoints": [
     "static/css/main.a817f63e.css",
-    "static/js/main.7cc94f2a.js"
+    "static/js/main.8383883e.js"
   ]
 }
