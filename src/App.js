@@ -28,12 +28,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header pwd={position} />
         <Routes>
-          {/* <MainContents />
-          <GucciItems />
-          <Footer /> */}
           <Route path="/home" element={<MainPage />}></Route>
           <Route path="/home" element={<Footer />}></Route>
           <Route path="/Gucciitems" element={<GucciItems />}></Route>
