@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.BASE_URL}>
       <Header pwd={position} />
         <Routes>
           <Route path="/home" element={<MainPage />}></Route>
