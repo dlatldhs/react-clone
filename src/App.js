@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter , Routes, Route } from 'react-router-dom';
+import { BrowserRouter , Routes, Route  } from 'react-router-dom';
 import NotFound from "./components/NotFound";
 
 import "./style/popup.css";
@@ -29,15 +29,16 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter basename={process.env.BASE_URL}>
-      <Header pwd={position} />
+      {/* <HashRouter> */}
+        <Header pwd={position} />
         <Routes>
-          <Route path="/home" element={<MainPage />}></Route>
-          <Route path="/home" element={<Footer />}></Route>
-          <Route path="/Gucciitems" element={<GucciItems />}></Route>
+          <Route path="react-clone/home" element={<MainPage />}></Route>
+          <Route path="react-clone/home" element={<Footer />}></Route>
+          <Route path="react-clone/Gucciitems" element={<GucciItems />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
+        {/* </HashRouter> */}
       </BrowserRouter>
-      {/* <ImageSlider slides={SliderData}/> */}
     </div>
   );
 }
